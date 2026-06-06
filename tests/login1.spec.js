@@ -584,6 +584,8 @@ test('login test2 - Invalid', async({page})=>{
 
     await page.close();
 
+    console.log("hello");
+
 });
 
 
