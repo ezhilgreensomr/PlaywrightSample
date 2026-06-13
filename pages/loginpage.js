@@ -70,46 +70,46 @@
 // }
 
 
-import { BasePage } from "./BasePage";
+// import { BasePage } from "./BasePage";
 
-export class LoginPage extends BasePage{
+// export class LoginPage extends BasePage{
 
-  constructor(page) {
-    super(page);
-    this.page = page;
-  }
+//   constructor(page) {
+//     super(page);
+//     this.page = page;
+//   }
 
-  // Locators (methods inside)
-  username() {
-    return this.page.locator('[name="email"]');
-  }
+//   // Locators (methods inside)
+//   username() {
+//     return this.page.locator('[name="email"]');
+//   }
 
-  password() {
-    return this.page.locator('[name="pass"]');
-  }
+//   password() {
+//     return this.page.locator('[name="pass"]');
+//   }
 
-  loginBtn() {
-    return this.page.locator('//span[text()="Log in"]');
-  }
+//   loginBtn() {
+//     return this.page.locator('//span[text()="Log in"]');
+//   }
 
-  async gotoLoginPage() {
-    await this.page.goto('https://www.facebook.com/');
-  }
+//   async gotoLoginPage() {
+//     await this.page.goto('https://www.facebook.com/');
+//   }
 
-  createNewAccountBtn(){
+//   createNewAccountBtn(){
 
-    return this.page.locator("//span[text()='Create new account']");
-  }
+//     return this.page.locator("//span[text()='Create new account']");
+//   }
 
-  async login(user, pass) {
+//   async login(user, pass) {
     
-    await this.enterText(this.username(), user);
+//     await this.enterText(this.username(), user);
 
-    await this.enterText(this.password(), pass);
+    // await this.enterText(this.password(), pass);
 
-    await this.clickButton(this.loginBtn());
+    // await this.clickButton(this.loginBtn());
 
 
 
-  }
-}
+//   }
+// }
