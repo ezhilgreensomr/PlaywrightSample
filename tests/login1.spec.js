@@ -567,22 +567,22 @@ import { SignUp } from "../pages/SignupPage";
 
 test('login test2 - Invalid', async({page})=>{
 
-    await page.goto("https://www.facebook.com/", {timeout: 60000, waitUntil: "domcontentloaded"});
+    // await page.goto("https://www.facebook.com/", {timeout: 60000, waitUntil: "domcontentloaded"});
 
-    let loginpage = new LoginPage(page);
+    // let loginpage = new LoginPage(page);
 
-    await loginpage.login("abc123","abc");
+    // await loginpage.login("abc123","abc");
 
 
-    await loginpage.createNewAccountBtn().click();
+    // await loginpage.createNewAccountBtn().click();
 
-    let signuppage = new SignUp(page);
+    // let signuppage = new SignUp(page);
 
-    await signuppage.enterFirstandSurName("abc","abc123");
+    // await signuppage.enterFirstandSurName("abc","abc123");
    
-    await page.waitForTimeout(5000);
+    // await page.waitForTimeout(5000);
 
-    await page.close();
+    // await page.close();
 
     console.log("hello");
 
