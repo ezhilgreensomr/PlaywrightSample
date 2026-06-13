@@ -1,27 +1,27 @@
 
-export class SignUp{
+// export class SignUp{
 
-    constructor(page){
+//     constructor(page){
 
-        this.page = page;
+//         this.page = page;
 
-    }
+//     }
 
-    getFirstName(){
+//     getFirstName(){
 
-        let firstname = this.page.getByRole("textbox", {name: "Name First name Surname"});
+//         let firstname = this.page.getByRole("textbox", {name: "Name First name Surname"});
 
-        return firstname;
-    }
+//         return firstname;
+//     }
 
-    getSurName(){
+//     getSurName(){
 
-        return this.page.getByPlaceholder("Surname");
-    }
+//         return this.page.getByPlaceholder("Surname");
+//     }
 
-    async enterFirstandSurName(firstname,surname){
+//     async enterFirstandSurName(firstname,surname){
 
-        await this.getFirstName().fill(firstname);
-        await this.getSurName().fill(surname);
-    }
-}
+//         await this.getFirstName().fill(firstname);
+//         await this.getSurName().fill(surname);
+//     }
+// }
