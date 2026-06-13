@@ -562,8 +562,8 @@
 
 //All Rows Print
 import {test,expect} from "@playwright/test";
-import { LoginPage } from "../pages/loginpage";
-import { SignUp } from "../pages/SignupPage";
+// import { LoginPage } from "../pages/loginpage";
+// import { SignUp } from "../pages/SignupPage";
 
 test('login test2 - Invalid', async({page})=>{
 
